@@ -1,0 +1,263 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* { 
+  box-sizing: border-box;
+}
+  body {
+    min-height: 90vh;
+    /*margin: 0;*/
+    /*padding: 0;*/
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #646464;
+  }
+  h1.uppercase {
+    padding-top: 60px;
+    text-transform: uppercase;
+    font-size: 1.2em;
+  }
+  h2 {
+    font-size: 1.2em;
+    margin-bottom: 0;
+  }
+  img {
+    margin-top: 60px;
+    width: 90%;
+  }
+  a {
+    text-decoration: none;
+    color: #646464;
+  }
+  a:hover {
+    color: #e0ab26 !important;
+  }
+  /*li a {*/
+    /*list-style: none;*/
+  /*}*/
+
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+  .name {
+    font-size: 1.8em;
+    margin: auto;
+    padding: 15px 15px;
+  }
+  .main-nav {
+    display: flex;
+    width: 100%;
+    margin: auto;
+  }
+  ul.main-nav li a,
+  .footer-nav li a {
+    text-align: center;
+    display: block;
+    padding: 15px;
+    margin: 5px 0;
+    background: #fff;
+    color: #646464;
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+
+/* ---- Layout Containers & Page Elements ---- */
+
+  .main-header {
+    /*display: block;*/
+    background: #fcfcfc;
+    margin: auto;
+    padding: 1em 1em;
+  }
+  .section-home {
+    background: #fcfcfc;
+    padding-bottom: 25px;
+  }
+  .wrapper-home {
+    width: 85%;
+    margin: auto;
+  }
+  .section-home p {
+    color: #a3a3a3;
+  }
+  .section-home img {
+    max-width: 60%;
+    padding-bottom: 1em;
+  }
+  .section-portfolio {
+    width: 90%;
+    margin: auto;
+    background: #fff;
+    /*padding-bottom: 1em;*/
+  }
+  .section-portfolio img {
+    max-width: 100%;
+  }
+  .section-documentation  {
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 3em;
+  }
+  .section-contact {
+    width: 100%;
+    margin: auto;
+    background: #fcfcfc;
+    padding-bottom: 2em;
+  }
+  .section-contact p {
+    max-width: 90%;
+    margin: auto;
+  }
+  footer {
+    background: #fcfcfc;
+    /*width: 100%;*/
+    /*margin: auto;*/
+    padding: 20px;
+    flex-direction: row;
+  }
+  footer .footer-wrapper {
+    /*background: tomato;*/
+    flex-direction: row;
+    align-items: center;
+    width: 93%;
+    height: 35px;
+    margin: 35px auto;
+    border-top: solid 1px #ccc;
+  }
+  .footer-wrapper li {
+    margin-top: 30px;
+  }
+
+
+/* =================================
+  Media Queries
+==================================== */
+
+  /* Styles for small screens */
+  @media screen and (max-width: 768px) {
+
+    .name,
+    .main-nav {
+      display: block;
+    }
+    ul.footer-nav.flex {
+      display: none;
+    }
+    .footer-wrapper ul {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  /* Styles for medium screens */
+
+  @media screen and (min-width: 769px)  {
+
+    .flex {
+      display: flex;
+    }
+    .header-wrapper {
+      flex-direction: column;
+      margin: auto;
+      /*align-content: center;*/
+    }
+    ul.main-nav {
+      justify-content: center;
+    }
+    ul.main-nav li a {
+      background: inherit;
+    }
+    .section-home {
+      max-width: 100%;
+      padding: 40px 0 60px;
+      background: #fcfcfc;
+    }
+    .wrapper-home {
+      flex-direction: row-reverse;
+    }
+    .wrapper-home p,
+    .wrapper-home img {
+      margin: 0;
+      padding-top: 0;
+    }
+    p.intro {
+      background: #fcfcfc;
+      margin-right: 8%;
+      text-align: left;
+    }
+    .section-portfolio {
+      flex-wrap: wrap;
+    }
+    .col {
+      flex-shrink: 1;
+      flex-grow: 1;
+      flex-basis: 50%;
+    }
+    .col p {
+      padding: 0 15px;
+    }
+    .section-contact p {
+      max-width: 460px;
+      margin: auto;
+    }
+    .top {
+      display: none;
+    }
+    .footer-wrapper {
+      justify-content: space-between;
+    }
+    .footer-nav li a {
+      background: inherit;
+      padding-right: 0;
+      padding-top: 2.1em;
+    }
+    .footer-name {
+      padding-top: 3em;
+      font-size: 1.2em;
+    }
+  }
+
+    /* Styles for larger screens */
+
+    @media (min-width: 1025px) {
+
+      .main-header {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .header-wrapper {
+        flex-direction: row;
+        width: 90%;
+        margin: auto;
+      }
+      ul.main-nav {
+        justify-content: flex-end;
+        max-width: 30%;
+        padding-right: 0;
+        margin-right: 0;
+      }
+      h1.name {
+        padding-left: 0;
+        margin-left: 0;
+      }
+      .wrapper-home {
+        max-width: 800px;
+      }
+      p.intro {
+        margin-right: 12%;
+      }
+      .col {
+        max-width: 33.3%;
+      }
+
+    }
+

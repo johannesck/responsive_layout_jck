@@ -7,8 +7,6 @@
 }
   body {
     min-height: 90vh;
-    /*margin: 0;*/
-    /*padding: 0;*/
     font-size: 1em;
     line-height: 1.5;
     text-align: center;
@@ -35,9 +33,6 @@
   a:hover {
     color: #e0ab26 !important;
   }
-  /*li a {*/
-    /*list-style: none;*/
-  /*}*/
 
 
 /* =================================
@@ -65,19 +60,18 @@
     background: #fff;
     color: #646464;
     font-size: 1.2em;
-    font-weight: 700;
+    font-weight: 500;
   }
 
 /* ---- Layout Containers & Page Elements ---- */
 
   .main-header {
-    /*display: block;*/
-    background: #fcfcfc;
+    background: linear-gradient(white, #f2f2f2);
     margin: auto;
     padding: 1em 1em;
   }
   .section-home {
-    background: #fcfcfc;
+    background: linear-gradient(#f2f2f2, white);
     padding-bottom: 25px;
   }
   .wrapper-home {
@@ -95,7 +89,6 @@
     width: 90%;
     margin: auto;
     background: #fff;
-    /*padding-bottom: 1em;*/
   }
   .section-portfolio img {
     max-width: 100%;
@@ -118,13 +111,10 @@
   }
   footer {
     background: #fcfcfc;
-    /*width: 100%;*/
-    /*margin: auto;*/
     padding: 20px;
     flex-direction: row;
   }
   footer .footer-wrapper {
-    /*background: tomato;*/
     flex-direction: row;
     align-items: center;
     width: 93%;
@@ -142,7 +132,7 @@
 ==================================== */
 
   /* Styles for small screens */
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
 
     .name,
     .main-nav {
@@ -159,15 +149,17 @@
 
   /* Styles for medium screens */
 
-  @media screen and (min-width: 769px)  {
+  @media screen and (min-width: 768px)  {
 
     .flex {
       display: flex;
     }
+    .main-header {
+      background: #fcfcfc;
+    }
     .header-wrapper {
       flex-direction: column;
       margin: auto;
-      /*align-content: center;*/
     }
     ul.main-nav {
       justify-content: center;
@@ -227,7 +219,7 @@
 
     /* Styles for larger screens */
 
-    @media (min-width: 1025px) {
+    @media (min-width: 1024px) {
 
       .main-header {
         flex-direction: row;

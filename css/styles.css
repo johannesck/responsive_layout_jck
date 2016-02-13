@@ -90,9 +90,6 @@
     margin: auto;
     background: #fff;
   }
-  .section-portfolio img {
-    max-width: 100%;
-  }
   .section-documentation  {
     justify-content: space-around;
     width: 90%;
@@ -114,7 +111,7 @@
     padding: 20px;
     flex-direction: row;
   }
-  footer .footer-wrapper {
+  .footer-wrapper {
     flex-direction: row;
     align-items: center;
     width: 93%;
@@ -160,6 +157,7 @@
     .header-wrapper {
       flex-direction: column;
       margin: auto;
+      /*align-content: center;*/
     }
     ul.main-nav {
       justify-content: center;
